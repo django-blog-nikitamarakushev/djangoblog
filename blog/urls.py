@@ -9,5 +9,8 @@ urlpatterns = [
     path("", views.PostList.as_view(), name="home"),
     #path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     #path("<slug:slug>/", views.post_detail, name="post_detail"),
-    path("about/", views.About.as_view())
+    path("about/", views.About.as_view()),
+    path("contact/", views.Contact.as_view()),
+    path("policy/", views.Policy.as_view()),
+    path("download_policy/", views.download_policy)
 ]
